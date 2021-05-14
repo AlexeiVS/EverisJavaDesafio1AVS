@@ -32,8 +32,8 @@ public class FPDual {
 		System.out.println("Nombre de empresa: " + Developer.empresa);
 
 		/** Numero total de empleados desde los desarrolladores 1 y 4 */
-		System.out.println("Número total de empleados (desde d1): " + desarrollador1.getContadorEmpleados());
-		System.out.println("Número total de empleados (desde d4): " + desarrollador4.getContadorEmpleados());
+		System.out.println("Número total de empleados desde desarrollador 1: " + desarrollador1.getContadorEmpleados());
+		System.out.println("Número total de empleados desde desarrollador 4: " + desarrollador4.getContadorEmpleados());
 
 		/** Número de cada desarrollador */
 		System.out.println("Número de empleado de desarrollador 1: " + desarrollador1.idEmpleado);
