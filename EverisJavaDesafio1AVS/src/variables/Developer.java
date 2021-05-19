@@ -50,10 +50,11 @@ public class Developer {
 	/**
 	 * @param idEmpleado
 	 *            the idEmpleado to set
+	 * @throws Exception
 	 */
-	public void setIdEmpleado(int idEmpleado) {
+	public void setIdEmpleado(int idEmpleado) throws Exception {
 		if (contadorEmpleados >= 127) {
-			System.out.println("Alcanzado el numero maximo de empleados");
+			throw new Exception("Alcanzado el numero maximo de empleados");
 		}
 		this.idEmpleado = contadorEmpleados;
 	}
@@ -95,7 +96,6 @@ public class Developer {
 	public void setDiasVacaciones(int diasVacaciones) {
 		this.diasVacaciones = diasVacaciones;
 	}
-
 
 	public int getDiasVacaciones() {
 		return diasVacaciones;
